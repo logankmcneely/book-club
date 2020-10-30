@@ -1,0 +1,8 @@
+Goodreads API
+  - GEM Docs:
+    https://github.com/sosedoff/goodreads
+  - Goodreads Docs:
+    https://www.goodreads.com/api/index
+
+Devise User Authentication:
+  - GEM Docs
