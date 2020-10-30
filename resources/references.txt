@@ -1,3 +1,8 @@
+Edit Credentials:
+  - In powershell:
+    > $env.EDITOR="code --wait"
+    > rails credentials:edit
+
 Goodreads API
   - GEM Docs:
     https://github.com/sosedoff/goodreads
@@ -10,3 +15,9 @@ Devise User Authentication:
   - Bootstrap Views:
     https://github.com/hisea/devise-bootstrap-views
     
+Sendgrid Confirmation Emails:
+  - Set up:
+    https://sendgrid.com/docs/for-developers/sending-email/rubyonrails/
+    https://sendgrid.com/docs/API_Reference/SMTP_API/integrating_with_the_smtp_api.html
+  - Dashboard:
+    https://app.sendgrid.com/
