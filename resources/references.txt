@@ -5,4 +5,8 @@ Goodreads API
     https://www.goodreads.com/api/index
 
 Devise User Authentication:
-  - GEM Docs
+  - GEM Docs:
+    https://github.com/heartcombo/devise
+  - Bootstrap Views:
+    https://github.com/hisea/devise-bootstrap-views
+    
