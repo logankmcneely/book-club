@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_02_150102) do
+ActiveRecord::Schema.define(version: 2020_11_02_152043) do
 
   create_table "books", force: :cascade do |t|
     t.integer "goodreads_id"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2020_11_02_150102) do
     t.integer "book_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "reading_status"
     t.index ["book_id"], name: "index_user_books_on_book_id"
     t.index ["user_id"], name: "index_user_books_on_user_id"
   end
