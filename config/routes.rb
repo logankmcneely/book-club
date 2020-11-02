@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :users
   root 'home#index'
+  get 'me', to: 'home#me'
+  get 'search_books', to: 'books#search'
+  devise_for :users
 end

@@ -1,0 +1,17 @@
+<h1>Hello From Me</h1>
+
+
+<%= form_tag search_books_path, remote: true, method: :get do %>
+  <div class="input-group">
+    <%= text_field_tag :book, params[:book], placeholder: "Search Books", class: 'form-control form-control-lg'%>
+    <div class="input-group-append">
+      <%= button_tag type: :submit, class: 'btn btn-secondary' do %>
+        <%= fa_icon 'search 2x' %>
+      <% end %>
+    </div>
+  </div>
+<% end %>
+
+<div id="book-search-results">
+  <%= render "books/search_results" %>
+</div>
