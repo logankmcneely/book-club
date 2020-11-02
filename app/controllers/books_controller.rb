@@ -7,8 +7,8 @@ class BooksController < ApplicationController
         format.js { render partial: 'books/search_results' }
       end
     else
-      flash[:alert] = "Please enter a book to search"
       respond_to do |format|
+        flash.now[:alert] = "Please enter a book to search"
         format.js { render partial: 'books/search_results' }
       end
     end
