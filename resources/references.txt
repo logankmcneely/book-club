@@ -12,8 +12,8 @@ Goodreads API
 Devise User Authentication:
   - GEM Docs:
     https://github.com/heartcombo/devise
-  - Bootstrap Views:
-    https://github.com/hisea/devise-bootstrap-views
+  - Materialize Views:
+    https://github.com/chiefpansancolt/devise_materialize
     
 Sendgrid Confirmation Emails:
   - Set up:
@@ -22,8 +22,12 @@ Sendgrid Confirmation Emails:
   - Dashboard:
     https://app.sendgrid.com/
 
-Font Awesome Rails:
-  - Github:
-    https://github.com/bokmann/font-awesome-rails
+Materialize-CSS:
+  - Gem:
+    https://github.com/mkhairi/materialize-sass
+  - Icons:
+    https://github.com/Angelmmiguel/material_icons
+  - Setup for Rails 6:
+    https://titanwolf.org/Network/Articles/Article?AID=26742bed-4f9b-44ed-9477-61ca521843b7
 
 
