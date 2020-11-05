@@ -1,2 +1,110 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div id="index-banner" class="parallax-container">
+  <div class="section no-pad-bot">
+    <div class="container">
+      <br><br>
+      <h1 class="header center teal-text text-lighten-2">Books Club</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">A place to connect with others who share your love for books.</h5>
+      </div>
+      <div class="row center">
+        <%= link_to "Get Started", new_user_registration_path, id: "download-button", class: "btn-large waves-effect waves-light teal lighten-1" %>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+  <div class="parallax"><%= image_tag  "background1.jpg" %></div>
+</div>
+
+<div class="container">
+  <div class="section">
+
+    <!--   Icon Section   -->
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center brown-text"><i class="material-icons">group_add</i></h2>
+          <h5 class="center">Connect with others</h5>
+
+          <p class="light">Add friends and see what they've read, are currently reading, and plan to read. View their must-read books and reviews to find your next read.</p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center brown-text"><i class="material-icons">local_cafe</i></h2>
+          <h5 class="center">Spoiler-free book chats</h5>
+
+          <p class="light">Whether we've come accross a major plot twist or are away from our reading corner for a bit, there are times you just want to talk about what you've read. Comfortably chat about a book you are currently reading with our spoiler-free protection. (READ MORE)</p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="icon-block">
+          <h2 class="center brown-text"><i class="material-icons">local_library</i></h2>
+          <h5 class="center">Manage your library</h5>
+          <p class="light">Keep track of your read books, update your reading progress, and plan for your future reads. Rate your previously read books and showcase your must-read books to others.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="parallax-container valign-wrapper">
+  <div class="parallax"><%= image_tag  "background2.jpg" %></div>
+</div>
+
+<div class="container">
+  <div class="section align-center">
+    <div class="row">
+      <div class="col s12 center">
+        <br>
+        <h4 class="center-align light"><i>“A reader lives a thousand lives before he dies. The man who never reads lives only one.”</i></h4>
+        <p class="right-align"> - George R.R. Martin</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="parallax-container valign-wrapper">
+  <div class="parallax"><%= image_tag  "background3.jpg" %></div>
+</div>
+
+<footer class="page-footer teal">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Company Bio</h5>
+        <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">Settings</h5>
+        <ul>
+          <li><a class="white-text" href="#!">Link 1</a></li>
+          <li><a class="white-text" href="#!">Link 2</a></li>
+          <li><a class="white-text" href="#!">Link 3</a></li>
+          <li><a class="white-text" href="#!">Link 4</a></li>
+        </ul>
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">Connect</h5>
+        <ul>
+          <li><a class="white-text" href="#!">Link 1</a></li>
+          <li><a class="white-text" href="#!">Link 2</a></li>
+          <li><a class="white-text" href="#!">Link 3</a></li>
+          <li><a class="white-text" href="#!">Link 4</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+    </div>
+  </div>
+</footer>

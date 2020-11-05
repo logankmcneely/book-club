@@ -19,3 +19,8 @@ require("jquery")
 
 
 import 'materialize-css/dist/js/materialize'
+
+
+$(document).on('turbolinks:load', function () {
+  $('.parallax').parallax();
+});

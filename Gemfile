@@ -29,9 +29,9 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'goodreads'
 gem 'devise'
-gem 'materialize-sass', '~> 1.0.0'
+gem 'materialize-sass'
 gem 'material_icons'
-gem "devise_materialize", "~>1.2.0"
+gem "devise_materialize"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

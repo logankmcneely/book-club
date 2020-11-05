@@ -243,11 +243,11 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   devise
-  devise_materialize (~> 1.2.0)
+  devise_materialize
   goodreads
   jbuilder (~> 2.7)
   material_icons
-  materialize-sass (~> 1.0.0)
+  materialize-sass
   pg
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.4)
