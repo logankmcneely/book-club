@@ -14,15 +14,19 @@ p {
   min-height: 380px;
   line-height: 0;
   height: auto;
-  color: rgba(255, 255, 255, .8);
+  color: rgba(255, 255, 255, .9);
 }
 
 .parallax-container .section {
   width: 100%;
 }
 
-#parallax-1 {
-  background-image: asset-url('background1.jpg');
+#title-background {
+  filter: opacity(0.75)
+}
+
+#index-banner {
+  // background-color: rgba(100, 100, 100, 0.25);
 }
 
 @media only screen and (max-width : 992px) {
