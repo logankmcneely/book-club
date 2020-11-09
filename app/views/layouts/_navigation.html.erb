@@ -1,15 +1,16 @@
 <nav class="brown lighten-5" role="navigation">
   <div class="nav-wrapper container">
-    <%= link_to "Book Club", root_path, id:"logo-container", class:"brand-logo" %>
+
+    <%= link_to "Book Club", root_path, id:"logo-container", class:"brand-logo center" %>
 
     <ul class="right hide-on-med-and-down">
-        <li>
-          <% if current_user %>
-            <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-          <% else %>
-            <%= link_to "Log in", new_user_session_path %>
-          <% end %>
-        </li>
+      <li>
+        <% if current_user %>
+          <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+        <% else %>
+          <%= link_to "Log in", new_user_session_path %>
+        <% end %>
+      </li>
     </ul>
 
     <ul id="nav-mobile" class="sidenav">

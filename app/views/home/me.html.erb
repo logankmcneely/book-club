@@ -1,16 +1,14 @@
-<h1>Hello From Me</h1>
-
-
-<%= form_tag search_books_path, remote: true, method: :get do %>
-  <div class="input-group">
-    <%= text_field_tag :book, params[:book], placeholder: "Search Books", class: 'form-control form-control-lg'%>
-    <div class="input-group-append">
-      <%= button_tag type: :submit, class: 'btn btn-secondary' do %>
-        <%= fa_icon 'search 2x' %>
-      <% end %>
+<nav class="brown lighten-2" role="navigation">
+  <div class="nav-wrapper container">
+    <%= form_tag search_books_path, remote: true, method: :get do %>
+    <div class="input-field", id="search-books">
+      <%= search_field_tag :book, params[:book], placeholder: "Search Books", id:"search" %>
+      <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+      <i class="material-icons">close</i>
     </div>
+    <% end %>
   </div>
-<% end %>
+</nav>
 
 <div id="book-search-results">
   <%= render "books/search_results" %>

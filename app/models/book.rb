@@ -4,7 +4,7 @@ class Book < ApplicationRecord
 
   def self.search(query)
     client = Goodreads.new(api_key: Rails.application.credentials.goodreads[:key])
-    client.search_books(query)
+    client.search_books(query).results.work
   end
 
 end

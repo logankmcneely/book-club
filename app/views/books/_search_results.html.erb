@@ -1,3 +1,31 @@
 <% if @results %>
-  <%= @results %>
+
+  <ul class="container collection">
+    <% @results.each do |result| %>
+      <li class="collection-item avatar">
+        <img src=<%= result.best_book.small_image_url %> alt="" class="circle">
+        <span class="title"><%= result.best_book.title %></span>
+        <p><%= result.best_book.author.name %></p>
+        <p><small><%= result.average_rating %> (<%= result.ratings_count %>)</small></p>
+      </li>
+    <% end %>
+  </ul>
+
 <% end %>
+
+
+      <%
+=begin%>
+ <div id="book-search-card" class="card horizontal col s12">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img src=<%= result.best_book.image_url %>>
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4"><%= result.best_book.title %></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+      </div> 
+<%
+=end%>
+
+
