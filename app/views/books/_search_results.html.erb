@@ -1,31 +1,26 @@
 <% if @results %>
 
-  <ul class="container collection">
+  <ul class="container collection z-depth-3">
     <% @results.each do |result| %>
-      <li class="collection-item avatar">
-        <img src=<%= result.best_book.small_image_url %> alt="" class="circle">
-        <span class="title"><%= result.best_book.title %></span>
-        <p><%= result.best_book.author.name %></p>
-        <p><small><%= result.average_rating %> (<%= result.ratings_count %>)</small></p>
+      <li id="book-search-container" class="collection-item hoverable brown lighten-5">
+        <div class="row no-margin-bottom">
+          <div class="col s2 m1 right-align">
+            <img src=<%= result.best_book.small_image_url %> id="book-search-img" alt="" class="z-depth-2">
+          </div>
+          <div class="col s10 m11">
+            <div class="col s12 truncate">
+              <%= result.best_book.title %>
+            </div>
+            <div class="col s12 truncate">
+              <em><%= result.best_book.author.name %></em>
+            </div>
+            <div class="col s12">
+              <%= result.average_rating %> (<%= result.ratings_count %>)
+            </div>
+          </div>
+        </div>
       </li>
     <% end %>
   </ul>
 
 <% end %>
-
-
-      <%
-=begin%>
- <div id="book-search-card" class="card horizontal col s12">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img src=<%= result.best_book.image_url %>>
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4"><%= result.best_book.title %></span>
-          <p><a href="#">This is a link</a></p>
-        </div>
-      </div> 
-<%
-=end%>
-
-
