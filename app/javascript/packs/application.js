@@ -27,3 +27,9 @@ $(document).on('turbolinks:load', function () {
   $('.dropdown-trigger').dropdown();
 });
 
+$(document).on('turbolinks:load', function () {
+  $('#clear-search').on('click', function (e) { 
+    $('#search')[0].value = '';
+    $('#book-search-results').html('');
+  });
+});

@@ -1,10 +1,10 @@
 <nav class="brown lighten-2" role="navigation">
   <div class="nav-wrapper container">
-    <%= form_tag search_books_path, remote: true, method: :get do %>
-    <div class="input-field", id="search-books">
+    <%= form_tag search_books_path, remote: true, method: :get, id:"search-books" do %>
+    <div class="input-field">
       <%= search_field_tag :book, params[:book], placeholder: "Search Books", id:"search" %>
       <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-      <i class="material-icons">close</i>
+      <i id="clear-search" class="material-icons">close</i>
     </div>
     <% end %>
   </div>
