@@ -1,1 +1,4 @@
 document.querySelector('#book-search-results').innerHTML = '<%= j render 'books/search_results.html' %>'
+$('li[data-link]').on('click', function (e) {
+    window.location = $(this).data('link')
+})

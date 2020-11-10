@@ -33,3 +33,9 @@ $(document).on('turbolinks:load', function () {
     $('#book-search-results').html('');
   });
 });
+
+$(document).on('turbolinks:load', function () {
+  $('li[data-link]').on('click', function (e) {
+    console.log($(this));
+  })
+});
