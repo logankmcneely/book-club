@@ -20,22 +20,17 @@ require("jquery")
 
 import 'materialize-css/dist/js/materialize'
 
-
+// Set parallax, sidenav and drop down functionality
 $(document).on('turbolinks:load', function () {
   $('.parallax').parallax();
   $('.sidenav').sidenav();
   $('.dropdown-trigger').dropdown();
 });
 
+// Clear search button on click
 $(document).on('turbolinks:load', function () {
   $('#clear-search').on('click', function (e) { 
     $('#search')[0].value = '';
     $('#book-search-results').html('');
   });
-});
-
-$(document).on('turbolinks:load', function () {
-  $('li[data-link]').on('click', function (e) {
-    console.log($(this));
-  })
 });

@@ -1,4 +1,6 @@
-document.querySelector('#book-search-results').innerHTML = '<%= j render 'books/search_results.html' %>'
+$('#book-search-results').html('<%= j render 'books/search_results.html' %>')
+
+// Set listeners to link results to book page
 $('li[data-link]').on('click', function (e) {
     window.location = $(this).data('link')
 })

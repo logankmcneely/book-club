@@ -1,17 +1,19 @@
-#book-search-container {
+#book-search-result-container {
   padding: 0;
+
   .row {
     padding: 10px 20px;
   }
+
   :hover {
     background-color: white !important;
     transition-duration: .5s;
     cursor: pointer;
   }
-}
 
-#book-search-img {
-  height: 64px;
-  max-width: 48px;
-  object-fit: cover;
+  img {
+    height: 64px;
+    max-width: 48px;
+    object-fit: cover;
+  }
 }

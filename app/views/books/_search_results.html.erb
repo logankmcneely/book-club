@@ -2,10 +2,10 @@
 
   <ul class="container collection z-depth-3">
     <% @results.each do |result| %>
-      <li id="book-search-container" class="collection-item hoverable brown lighten-5" data-link="<%= book_path(result.id) %>">
+      <li id="book-search-result-container" class="collection-item hoverable brown lighten-5" data-link="<%= book_path(result.id) %>">
         <div class="row no-margin-bottom">
           <div class="col s2 m1 right-align">
-            <img src=<%= result.best_book.small_image_url %> id="book-search-img" alt="" class="z-depth-2">
+            <img src=<%= result.best_book.small_image_url %> alt="" class="z-depth-2">
           </div>
           <div class="col s10 m11">
             <div class="col s12 truncate">
